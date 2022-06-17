@@ -304,7 +304,7 @@ func UserEnter(showRandomSudoku [][]int) {
 }
 
 func BackGo(bigSlice, showRandomSudoku [][]int) ([][]int, [][]int) {
-	if bigSlice != nil {
+	if len(bigSlice) != 0 {
 		if len(bigSlice) > 1 {
 			showRandomSudoku[bigSlice[len(bigSlice)-1][0]][bigSlice[len(bigSlice)-1][1]] = 0
 			bigSlice = bigSlice[:len(bigSlice)-1]
