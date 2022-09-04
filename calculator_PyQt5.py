@@ -27,7 +27,7 @@ class Window(QWidget):
         super().__init__()
         self.setWindowTitle('Calculator')
         self.setGeometry(1300, 300, 350, 585)
-        #self.setStyleSheet("background-color: cyan;")
+        self.setStyleSheet("background-color: red;")
         self.control()
     def font(self, ob):
         ob.setFont(QFont("Times", 20))
